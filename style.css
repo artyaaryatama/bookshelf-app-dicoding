@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Gabarito&family=Pixelify+Sans&display=swap');
+
+:root {
+  --light-green : #f4f4d5;
+  --green: #a4b07e;
+  --green-dark: #707c4f;
+  --olive: #424106;
+  --sand: #d4cb8c;
+  --brick-light: #c6a685;
+  --brick: #6d4930;
+
+}
+
+*{
+  font-family: 'Gabarito', cursive;
+}
+
+body{
+  background-color: #131313;
+  color: #a7f547;
+  margin: 0;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+}
+
+.row{
+  display: flex;
+}
+
+h1{
+  font-size: 24px;
+  margin: 2px;
+  font-family: 'Pixelify Sans', cursive;
+}
+
+h2{
+  font-family: 'Pixelify Sans', cursive;
+  font-size: 20px;
+  margin: 20px 0 0;
+  text-align: center;
+}
+
+h3{
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  margin: 6px 0;
+}
+
+h4{
+  font-size: 16px;
+  margin: 0 0 4px;
+  letter-spacing: 0.4px;
+}
+
+h5{
+  font-size: 12px;
+  margin: 2px 0;
+  font-weight: 500;
+}
+
+span{
+  font-style: italic;
+}
+
+i.fa-solid{
+  font-size: 64px;
+  color: #131313;
+}
+
+small{
+  font-size: 14px;
+  margin-top: 2px;
+}
+
+hr{
+  border: solid 2px #a7f547;
+  width: 206px;
+  margin-bottom: 32px;
+}
+
+header{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 22px 0;
+  margin-right: 12px;
+}
+
+input{
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--brick);
+  padding: 6px 4px;
+  border: none;
+  border-radius: 4px;
+  font-style: italic;
+  outline: none;
+}
+
+input:focus{
+  border: solid 2px #a7f547;
+  outline: none;
+}
+
+button{
+  padding: 6px 14px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  font-family: 'Pixelify Sans', cursive;
+}
+
+button:hover{
+  cursor: pointer;
+  opacity: 0.9;
+  font-weight: 700;
+}
+
+ul{
+  list-style: none;
+  padding: 0;
+}
+
+header > h1{
+  margin: 0;
+}
+
+main{
+  width: 100%;
+  justify-content: space-around;
+  margin-top: 18px;
+}
+
+header .projectTitle{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #a7f547;
+  width: 320px;
+  padding: 12px 0;
+  border-radius: 50px;
+  color: #131313;
+}
+
+main section.form{
+  width: 20%;
+  height: 406px;
+  padding: 16px;
+  background-color: #a7f547;
+  border-radius: 20px;
+  color: #131313;
+}
+
+main section.form hr{
+  border: solid 2px #131313;
+}
+
+section.form ul li {
+  margin-bottom: 20px;
+}
+
+section.form ul li label{
+  font-size: 16px;
+  margin-bottom: 6px;
+}
+
+section.form ul li.checkbox:hover{
+  font-weight: 600;
+}
+
+section.form ul li button{
+  background-color: #fbff12;
+  color: #131313;
+  width: 100%;
+}
+
+main section.book-data{
+  width: 66%;
+  padding: 6px;
+  border: solid 4px #a7f547;
+  border-radius: 20px;
+}
+
+/* section.book-data .search-book{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section.book-data .search-book form{
+  width: 100%;
+}
+
+section.book-data .search-book input{
+  margin-right: 10px;
+  width: 90%;
+}
+
+section.book-data .search-book button{
+  background-color: #fbff12;
+  color: #131313;
+} */
+
+section.book-data ul.bookshelfData {
+  justify-content: space-around;
+}
+
+section.book-data ul.bookshelfData > li {
+  width: 44%;
+  padding: 12px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+} 
+
+section.book-data ul.bookshelfData li .sub-menu {
+  background-color: #a7f547;
+  width: 200px;
+  color: #131313;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50px;
+}
+
+section.book-data ul.bookshelfData li .sub-menu.uncomplete{
+  background-color: #fbff12;
+
+}
+
+section.book-data ul.bookshelfData li ul li.card{
+  border-bottom: solid 4px #a7f547;
+  padding: 12px 10px;
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+section.book-data ul.bookshelfData li ul li.card.uncomplete{
+  border-bottom: solid 4px#fbff12;
+}
+
+section.book-data ul.bookshelfData li ul li.card .book-logo{
+  background-color: #a7f547;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 96px;
+  margin-right: 12px;
+  border-radius: 50%;
+}
+
+section.book-data ul.bookshelfData li ul li.card .book-logo.uncomplete{
+  background-color: #fbff12;
+}
+
+section.book-data ul.bookshelfData li ul li.card .book-desc.uncomplete > h4{
+  color: #fbff12
+}
+
+section.book-data ul.bookshelfData li ul li.card .book-desc.uncomplete > h5{
+  color: #fbff12
+}
+
+section.book-data ul.bookshelfData li ul li.card button{
+  margin-top: 10px;
+}
+
+section.book-data ul.bookshelfData li ul li.card button#moveUncompleted:hover{
+  background-color: #fbff12;
+}
+
+section.book-data ul.bookshelfData li ul li.card button#moveCompleted:hover{
+  background-color: #a7f547;
+}
+
+section.book-data ul.bookshelfData li ul li.card button.deleteBooks{
+  background-color: #c1121f;
+  color: #131313;
+}
+
+footer {
+  margin-top: 30px;
+}
+
+footer .clear-storage{
+  padding: 16px 0;
+  display: flex;
+  justify-content: center;
+}
+
+footer .clear-storage button{
+  padding: 10px 30px;
+}
+
+footer .clear-storage button:hover{
+  background-color: #c1121f;
+}

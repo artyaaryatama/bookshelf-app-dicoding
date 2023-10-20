@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Bookshelf Submission Dicoding</title>
+</head>
+<body>
+
+  <header>
+    <div class="projectTitle">
+      <h1>BOOKSHELF APP</h1>
+      <small>Submission Dicoding 2023</small>
+    </div>
+  </header>
+
+  <main class="row">
+    <section class="form">
+      <h2>Input Books Data</h2>
+      <hr>
+      <ul class="column">
+        <li class="column">
+          <label for="title">Books Title</label>
+          <input type="text" name="title" placeholder="Ex: Tutorial HTML" id="bTitle" required/>
+        </li>
+        <li class="column">
+          <label for="author">Books Author</label>
+          <input type="text" name="author" placeholder="Ex: Jhonny Doe" id="bAuthor" required/>
+        </li>
+        <li class="column">
+          <label for="year">Published Year</label>
+          <input type="number" name="year" id="bYear" placeholder="2023" required/>
+        </li>
+        <li class="checkbox">
+          <input type="checkbox" id="bCompleted" name="readed" value="false">
+          <label for="readed">Completed Read</label>
+        </li>
+        <li><button type="button" id="addBook">Add to Bookshelf</button></li>
+      </ul>
+    </section>
+
+    <section class="book-data">
+      <h2>Bookshelf</h2>
+      <hr>
+
+      <!-- <div class="search-book">
+        <form id="searchBook">
+          <input id="searchBookTitle" type="text" placeholder="Insert Books Title">
+          <button id="searchSubmit" type="submit">Search</button>
+        </form>
+      </div> -->
+
+      <ul class="row bookshelfData">
+        <li class="BookIsNotCompleted">
+          <div class="sub-menu uncomplete">
+            <h3>Uncompleted Read</h3>
+          </div>
+          <ul class="column" id="uncompletedBookShelf">
+
+          </ul>
+        </li>
+
+        <li class="bookIsCompleted">
+          <div class="sub-menu">
+            <h3>Completed Read</h3>
+          </div>
+          <ul class="column" id="CompletedBookShelf">
+
+          </ul>
+        </li>
+      </ul>
+
+    </section>
+  </main>
+
+  <footer>
+    <div class="clear-storage">
+      <button type="button" id="deleteAllBooks">Clear All Books</button>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
